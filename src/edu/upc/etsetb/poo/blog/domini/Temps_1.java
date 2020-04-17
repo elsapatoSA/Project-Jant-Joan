@@ -39,9 +39,7 @@ public class Temps {
             return(-1);
         else
             return(0);
-        
     }
-    
     public int comparaTemps(Temps altre){
         String parts[]=altre.dia.split("-"), parts_this[]=this.dia.split("-");
         String h[]=altre.hora.split("-"), h_this[]=this.hora.split("-");
@@ -56,28 +54,17 @@ public class Temps {
             return(1);
         else if (any_this<any || any_this==any && mes_this<mes || any_this==any && mes_this==mes && dia_this<dia)
             return(-1);
-        else if (any_this<any || any_this==any && mes_this<mes || any_this==any && mes_this==mes && dia_this==dia)
-        {
-            if (hora_this>any || hora_this==hora && minut_this>minut || hora_this==hora && minut_this==minut && segon_this>segon)
-            return(1);
-            else if (hora_this<any || hora_this==hora && minut_this<minut || hora_this==hora && minut_this==minut && segon_this<segon)
-           return(-1);
-            else if (hora_this<any || hora_this==hora && minut_this<minut || hora_this==hora && minut_this==minut && segon_this==segon)
-           return(0);
-       
-        }return 0;
-
-    
-}   
-    @Override
-    public java.lang.String toString()
-    {
-       System.out.println("Dia: "+Temps.this.dia+" Hora: "+Temps.this.hora);
-    
-
-
-
-
-    return null;
+        
+        
+        
+        
+        
+        
+        
+ //       else if (hora_this>any || hora_this==hora && minut_this>minut || hora_this==hora && minut_this==minut && segon_this>segon)
+  //          return(1);
+            //      else if (hora_this<any || hora_this==hora && minut_this<minut || hora_this==hora && minut_this==minut && segon_this<segon)
+         //   return(-1);
+ //      
     }
 }

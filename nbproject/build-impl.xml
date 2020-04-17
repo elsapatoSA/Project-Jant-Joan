@@ -1324,7 +1324,7 @@ is divided into following sections:
                 EXECUTION SECTION
                 =================
             -->
-    <target depends="init,compile" description="Run a main class." name="run">
+    <target depends="init,compile" description="Run main class." name="run">
         <j2seproject1:java>
             <customize>
                 <arg line="${application.args}"/>
